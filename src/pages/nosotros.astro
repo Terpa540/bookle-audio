@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import PageHero from "../components/PageHero.astro";
+import FinalCTA from "../components/FinalCTA.astro";
 ---
 
 <MainLayout
@@ -8,22 +9,96 @@ import PageHero from "../components/PageHero.astro";
 >
 
 <PageHero
-  title="Especialistas en contenido sonoro"
-  description="Experiencia, precisión y atención al detalle en cada proyecto."
+  title="Experiencia al servicio de cada proyecto"
+  description="Producción de contenido sonoro con un enfoque centrado en la calidad, la precisión técnica y la experiencia de escucha."
 />
 
 <section class="section-bookle">
 
-  <div class="container-bookle max-w-4xl">
+  <div class="container-bookle">
 
-    <p class="text-xl leading-relaxed text-gray-600">
-      Bookle nace de años de experiencia en producción y edición de audio profesional.
-      Nuestro objetivo es ayudar a autores, editoriales y empresas a transformar sus
-      contenidos en experiencias de escucha de alta calidad.
-    </p>
+    <div class="max-w-4xl">
+
+      <h2 class="mb-8 text-4xl font-bold">
+        Nuestra filosofía
+      </h2>
+
+      <p class="mb-6 text-xl leading-relaxed text-gray-600">
+        Bookle nace con el objetivo de ofrecer un servicio especializado en producción de audiolibros y contenido sonoro profesional.
+      </p>
+
+      <p class="text-xl leading-relaxed text-gray-600">
+        Creemos que cada proyecto requiere una combinación equilibrada de criterio editorial, calidad técnica y atención al detalle para convertirse en una experiencia de escucha profesional.
+      </p>
+
+    </div>
 
   </div>
 
 </section>
+
+<section class="section-bookle bg-gray-50">
+
+  <div class="container-bookle">
+
+    <div class="grid gap-12 lg:grid-cols-3">
+
+      <div>
+        <h3 class="mb-4 text-2xl font-bold">
+          Calidad
+        </h3>
+
+        <p class="text-gray-600">
+          Cada producción recibe el mismo nivel de atención y supervisión técnica.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="mb-4 text-2xl font-bold">
+          Experiencia
+        </h3>
+
+        <p class="text-gray-600">
+          Más de siete años participando en proyectos de producción y edición de audio.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="mb-4 text-2xl font-bold">
+          Especialización
+        </h3>
+
+        <p class="text-gray-600">
+          Un enfoque centrado en narración, audiolibros y contenido hablado.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="section-bookle">
+
+  <div class="container-bookle">
+
+    <div class="max-w-4xl">
+
+      <h2 class="mb-8 text-4xl font-bold">
+        Cómo trabajamos
+      </h2>
+
+      <p class="text-xl leading-relaxed text-gray-600">
+        Acompañamos cada proyecto desde la planificación inicial hasta la entrega final. Nuestro objetivo es simplificar el proceso para el cliente, garantizando una producción eficiente y un resultado profesional preparado para su distribución.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<FinalCTA />
 
 </MainLayout>
