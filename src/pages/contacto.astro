@@ -1,17 +1,55 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import PageHero from "../components/PageHero.astro";
 ---
 
-<MainLayout title="Página en construcción">
+<MainLayout
+  title="Contacto | Bookle"
+>
+
+<PageHero
+  title="Cuéntanos tu proyecto"
+  description="Estaremos encantados de ayudarte a desarrollar tu próxima producción."
+/>
 
 <section class="section-bookle">
+
   <div class="container-bookle">
 
-    <h1 class="text-5xl font-bold mb-6">
-      Página en construcción
-    </h1>
+    <div class="max-w-3xl">
+
+      <form class="space-y-6">
+
+        <input
+          type="text"
+          placeholder="Nombre"
+          class="w-full rounded-lg border border-gray-300 p-4"
+        />
+
+        <input
+          type="email"
+          placeholder="Correo electrónico"
+          class="w-full rounded-lg border border-gray-300 p-4"
+        />
+
+        <textarea
+          rows="6"
+          placeholder="Cuéntanos tu proyecto"
+          class="w-full rounded-lg border border-gray-300 p-4"
+        ></textarea>
+
+        <button
+          class="rounded-lg bg-[#315F85] px-8 py-4 text-white"
+        >
+          Enviar consulta
+        </button>
+
+      </form>
+
+    </div>
 
   </div>
+
 </section>
 
 </MainLayout>
