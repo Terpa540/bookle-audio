@@ -1,0 +1,73 @@
+---
+const steps = [
+  {
+    number: "01",
+    title: "Consulta",
+    description: "Analizamos el proyecto y definimos sus necesidades.",
+  },
+  {
+    number: "02",
+    title: "Planificación",
+    description: "Diseñamos una propuesta adaptada a cada producción.",
+  },
+  {
+    number: "03",
+    title: "Producción",
+    description: "Coordinamos la grabación y el desarrollo técnico.",
+  },
+  {
+    number: "04",
+    title: "Postproducción",
+    description: "Editamos, revisamos y optimizamos cada detalle.",
+  },
+  {
+    number: "05",
+    title: "Entrega",
+    description: "Preparamos los archivos para distribución y publicación.",
+  },
+];
+---
+
+<section class="section-bookle">
+
+  <div class="container-bookle">
+
+    <div class="max-w-3xl mb-16">
+
+      <p class="mb-3 text-sm font-semibold uppercase tracking-widest text-[#315F85]">
+        Nuestro proceso
+      </p>
+
+      <h2 class="text-4xl font-bold">
+        Un flujo de trabajo claro de principio a fin.
+      </h2>
+
+    </div>
+
+    <div class="grid gap-8 lg:grid-cols-5">
+
+      {
+        steps.map((step) => (
+          <div>
+
+            <div class="mb-4 text-[#315F85] font-bold">
+              {step.number}
+            </div>
+
+            <h3 class="mb-3 text-xl font-semibold">
+              {step.title}
+            </h3>
+
+            <p class="text-gray-600">
+              {step.description}
+            </p>
+
+          </div>
+        ))
+      }
+
+    </div>
+
+  </div>
+
+</section>
