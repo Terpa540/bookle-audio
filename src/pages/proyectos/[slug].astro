@@ -1,0 +1,53 @@
+---
+import { getCollection, render } from "astro:content";
+
+import MainLayout from "../../layouts/MainLayout.astro";
+
+export async function getStaticPaths() {
+
+  const proyectos = await getCollection("proyectos");
+
+  return proyectos.map((proyecto) => ({
+    params: {
+      slug: proyecto.slug,
+    },
+    props: {
+      proyecto,
+    },
+  }));
+}
+
+const { proyecto } = Astro.props;
+
+const { Content } = await render(proyecto);
+---
+
+<MainLayout title={`${proyecto.data.title} | Bookle`}>
+
+<section class="section-bookle">
+
+  <div class="container-bookle max-w-4xl">
+
+    <p class="mb-4 text-sm uppercase tracking-widest text-[#315F85]">
+      {proyecto.data.category}
+    </p>
+
+    <h1 class="mb-8 text-5xl font-bold">
+      {proyecto.data.title}
+    </h1>
+
+    <p class="mb-16 text-xl text-gray-600">
+      {proyecto.data.description}
+    </p>
+
+    <article class="prose max-w-none">
+
+      <Content />
+
+    </article>
+
+  </div>
+
+</section>
+
+</MainLayout>

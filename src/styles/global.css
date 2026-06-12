@@ -30,3 +30,20 @@ h5,
 h6 {
   font-family: "Manrope", sans-serif;
 }
+
+.prose h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.prose p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.prose ul {
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}

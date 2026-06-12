@@ -1,0 +1,29 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  category: string;
+  slug: string;
+}
+
+const { title, description, category, slug } = Astro.props;
+---
+
+<a
+  href={`/proyectos/${slug}`}
+  class="block rounded-xl border border-gray-200 p-8 transition hover:-translate-y-1 hover:shadow-lg"
+>
+
+  <p class="mb-3 text-sm font-semibold uppercase tracking-widest text-[#315F85]">
+    {category}
+  </p>
+
+  <h3 class="mb-4 text-2xl font-bold">
+    {title}
+  </h3>
+
+  <p class="text-gray-600">
+    {description}
+  </p>
+
+</a>
