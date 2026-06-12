@@ -3,6 +3,8 @@ import MainLayout from "../layouts/MainLayout.astro";
 import PageHero from "../components/PageHero.astro";
 import ServiceBlock from "../components/ServiceBlock.astro";
 import FinalCTA from "../components/FinalCTA.astro";
+import AudienceBlock from "../components/AudienceBlock.astro";
+import ServiceFeatures from "../components/ServiceFeatures.astro";
 ---
 
 <MainLayout title="Servicios | Bookle">
@@ -11,6 +13,26 @@ import FinalCTA from "../components/FinalCTA.astro";
   title="Producción profesional de contenido sonoro"
   description="Acompañamos a autores, editoriales y empresas durante todo el proceso de producción de sus proyectos."
 />
+
+<section class="section-bookle">
+
+  <div class="container-bookle">
+
+    <div class="max-w-4xl">
+
+      <h2 class="mb-8 text-4xl font-bold">
+        Nos ocupamos de todo el proceso.
+      </h2>
+
+      <p class="text-xl leading-relaxed text-gray-600">
+        Desde la planificación inicial hasta la entrega final, Bookle coordina cada fase necesaria para transformar un contenido escrito en una experiencia de escucha profesional preparada para su distribución.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
 
 <section class="section-bookle">
 
@@ -63,6 +85,10 @@ import FinalCTA from "../components/FinalCTA.astro";
   </div>
 
 </section>
+
+<AudienceBlock />
+
+<ServiceFeatures />
 
 <FinalCTA />
 

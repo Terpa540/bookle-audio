@@ -1,0 +1,55 @@
+---
+const audiences = [
+  {
+    title: "Editoriales",
+    description:
+      "Producción de audiolibros para catálogos editoriales y nuevos lanzamientos.",
+  },
+  {
+    title: "Autores",
+    description:
+      "Acompañamiento profesional para convertir una obra escrita en formato audio.",
+  },
+  {
+    title: "Empresas",
+    description:
+      "Producción de contenidos narrativos, formativos y corporativos.",
+  },
+];
+---
+
+<section class="section-bookle bg-gray-50">
+
+  <div class="container-bookle">
+
+    <div class="max-w-3xl mb-16">
+
+      <h2 class="text-4xl font-bold">
+        Trabajamos con distintos perfiles y necesidades.
+      </h2>
+
+    </div>
+
+    <div class="grid gap-8 md:grid-cols-3">
+
+      {
+        audiences.map((item) => (
+          <div class="rounded-2xl border border-gray-200 bg-white p-8">
+
+            <h3 class="mb-4 text-2xl font-semibold">
+              {item.title}
+            </h3>
+
+            <p class="text-gray-600">
+              {item.description}
+            </p>
+
+          </div>
+        ))
+      }
+
+    </div>
+
+  </div>
+
+</section>
