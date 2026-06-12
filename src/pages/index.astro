@@ -1,52 +1,19 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+
+import Hero from "../components/Hero.astro";
+import StatsSection from "../components/StatsSection.astro";
+import ServicesPreview from "../components/ServicesPreview.astro";
 ---
 
 <MainLayout
   title="Bookle | Producción profesional de audiolibros"
 >
 
-<section class="section-bookle">
+  <Hero />
 
-  <div class="container-bookle">
+  <StatsSection />
 
-    <div class="max-w-4xl">
-
-      <p class="mb-4 text-sm font-semibold uppercase tracking-widest text-[#315F85]">
-        Producción profesional de audiolibros
-      </p>
-
-      <h1 class="mb-8 text-6xl font-bold leading-tight">
-        Del manuscrito al audio.
-      </h1>
-
-      <p class="mb-10 max-w-2xl text-xl text-gray-600">
-        Ayudamos a editoriales, autores y empresas a transformar sus contenidos
-        en experiencias de audio listas para su publicación y distribución.
-      </p>
-
-      <div class="flex gap-4">
-
-        <a
-          href="/contacto"
-          class="rounded-lg bg-[#315F85] px-6 py-4 text-white"
-        >
-          Solicitar presupuesto
-        </a>
-
-        <a
-          href="/servicios"
-          class="rounded-lg border border-gray-300 px-6 py-4"
-        >
-          Conocer servicios
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+  <ServicesPreview />
 
 </MainLayout>
