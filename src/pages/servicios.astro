@@ -1,67 +1,69 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import PageHero from "../components/PageHero.astro";
+import ServiceBlock from "../components/ServiceBlock.astro";
+import FinalCTA from "../components/FinalCTA.astro";
 ---
 
-<MainLayout
-  title="Servicios | Bookle"
->
+<MainLayout title="Servicios | Bookle">
 
 <PageHero
   title="Producción profesional de contenido sonoro"
-  description="Ofrecemos soluciones completas para proyectos editoriales, corporativos y narrativos."
+  description="Acompañamos a autores, editoriales y empresas durante todo el proceso de producción de sus proyectos."
 />
 
 <section class="section-bookle">
 
   <div class="container-bookle">
 
-    <div class="grid gap-12 lg:grid-cols-2">
+    <ServiceBlock
+      title="Producción de audiolibros"
+      description="Gestionamos proyectos editoriales de principio a fin, coordinando todos los elementos necesarios para obtener un resultado profesional."
+      features={[
+        "Planificación de producción",
+        "Coordinación técnica",
+        "Control de calidad",
+        "Supervisión integral del proyecto"
+      ]}
+    />
 
-      <div>
-        <h2 class="mb-4 text-2xl font-bold">
-          Producción de audiolibros
-        </h2>
+    <ServiceBlock
+      title="Grabación profesional"
+      description="Realizamos sesiones de grabación adaptadas a cada proyecto, tanto en estudio como en remoto."
+      features={[
+        "Grabación en estudio",
+        "Grabación remota",
+        "Supervisión técnica",
+        "Dirección de sesión"
+      ]}
+    />
 
-        <p class="text-gray-600">
-          Desarrollo integral de proyectos editoriales en formato audio.
-        </p>
-      </div>
+    <ServiceBlock
+      title="Edición y masterización"
+      description="Transformamos las grabaciones en productos finales preparados para distribución profesional."
+      features={[
+        "Limpieza de audio",
+        "Corrección de errores",
+        "Masterización",
+        "Control técnico"
+      ]}
+    />
 
-      <div>
-        <h2 class="mb-4 text-2xl font-bold">
-          Grabación profesional
-        </h2>
-
-        <p class="text-gray-600">
-          Sesiones en estudio y supervisión técnica especializada.
-        </p>
-      </div>
-
-      <div>
-        <h2 class="mb-4 text-2xl font-bold">
-          Edición y masterización
-        </h2>
-
-        <p class="text-gray-600">
-          Limpieza, corrección y preparación final del audio.
-        </p>
-      </div>
-
-      <div>
-        <h2 class="mb-4 text-2xl font-bold">
-          Distribución
-        </h2>
-
-        <p class="text-gray-600">
-          Entrega de archivos listos para plataformas y servicios de escucha.
-        </p>
-      </div>
-
-    </div>
+    <ServiceBlock
+      title="Distribución"
+      description="Preparamos los materiales para cumplir los requisitos de las principales plataformas y canales de distribución."
+      features={[
+        "Preparación de archivos",
+        "Organización por capítulos",
+        "Control de formatos",
+        "Entrega final"
+      ]}
+    />
 
   </div>
 
 </section>
+
+<FinalCTA />
 
 </MainLayout>

@@ -1,0 +1,45 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  features: string[];
+}
+
+const { title, description, features } = Astro.props;
+---
+
+<div class="grid gap-12 border-b border-gray-200 py-16 lg:grid-cols-2">
+
+  <div>
+
+    <h2 class="mb-6 text-3xl font-bold">
+      {title}
+    </h2>
+
+    <p class="text-lg leading-relaxed text-gray-600">
+      {description}
+    </p>
+
+  </div>
+
+  <div>
+
+    <ul class="space-y-4">
+
+      {
+        features.map((feature) => (
+          <li class="flex items-start gap-3">
+
+            <span class="mt-1 h-2 w-2 rounded-full bg-[#315F85]"></span>
+
+            <span>{feature}</span>
+
+          </li>
+        ))
+      }
+
+    </ul>
+
+  </div>
+
+</div>
