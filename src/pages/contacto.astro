@@ -9,44 +9,90 @@ import PageHero from "../components/PageHero.astro";
 
 <PageHero
   title="Cuéntanos tu proyecto"
-  description="Estaremos encantados de ayudarte a desarrollar tu próxima producción."
+  description="Cuéntanos tu proyecto y te ayudaremos a planificar una producción profesional adaptada a tus necesidades."
 />
 
 <section class="section-bookle">
 
   <div class="container-bookle">
+    <div class="mb-12 max-w-2xl">
 
+    <h2 class="mb-4 text-3xl font-bold">
+      Hablemos de tu proyecto
+    </h2>
+
+    <p class="text-lg text-gray-600">
+      Trabajamos con editoriales, autores y empresas en la producción de audiolibros y contenido narrativo. Cuéntanos qué necesitas y prepararemos una propuesta adaptada a tu proyecto.
+    </p>
+
+  </div>
     <div class="max-w-3xl">
 
-      <form class="space-y-6">
+      <form method="post" class="space-y-6">
 
         <input
           type="text"
+          name="name"
           placeholder="Nombre"
+          required
           class="w-full rounded-lg border border-gray-300 p-4"
         />
 
         <input
           type="email"
+          name="email"
           placeholder="Correo electrónico"
+          required
           class="w-full rounded-lg border border-gray-300 p-4"
         />
 
+        <select
+          name="projectType"
+          required
+          class="w-full rounded-lg border border-gray-300 p-4"
+        >
+          <option value="">
+            Selecciona el tipo de proyecto
+          </option>
+          <option value="audiolibro">Audiolibro</option>
+          <option value="editorial">Proyecto editorial</option>
+          <option value="corporativo">Contenido corporativo</option>
+          <option value="elearning">Formación / E-learning</option>
+          <option value="otro">Otro</option>
+        </select>
+
         <textarea
           rows="6"
+          name="message"
           placeholder="Cuéntanos tu proyecto"
+          required
           class="w-full rounded-lg border border-gray-300 p-4"
         ></textarea>
 
         <button
-          class="rounded-lg bg-[#315F85] px-8 py-4 text-white"
+          type="submit"
+          class="rounded-lg bookle-bg-primary px-8 py-4 text-white"
         >
-          Enviar consulta
+          Enviar proyecto
         </button>
 
       </form>
 
     </div>
+
+    <div class="mt-10 border-t border-gray-200 pt-8">
+
+    <p class="text-gray-600">
+      También puedes escribirnos directamente a
+      <a
+        href="mailto:info@bookle.es"
+        class="bookle-primary font-medium"
+      >
+        info@bookle.es
+      </a>
+    </p>
+
+</div>
 
   </div>
 
