@@ -12,7 +12,7 @@ const proyectos = await getCollection("proyectos");
 
 <PageHero
   title="Experiencia aplicada a cada producción"
-  description="Una selección de proyectos y áreas de especialización."
+  description="Ejemplos de proyectos y áreas de especialización en producción de audiolibros y contenido narrativo."
 />
 
 <section class="section-bookle">
@@ -27,7 +27,7 @@ const proyectos = await getCollection("proyectos");
             title={proyecto.data.title}
             description={proyecto.data.description}
             category={proyecto.data.category}
-            slug={proyecto.slug}
+            slug={proyecto.id}
           />
         ))
       }

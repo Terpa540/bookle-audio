@@ -1,13 +1,27 @@
 @import "tailwindcss";
 
+:root {
+
+  /* Bookle Brand */
+
+  --bookle-primary: #1F3142;
+  --bookle-accent: #C7A36B;
+
+  --bookle-bg: #FCFBF8;
+
+  --bookle-text: #1D1D1D;
+  --bookle-text-soft: #5A5A5A;
+
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Inter", sans-serif;
-  color: #151515;
-  background: #ffffff;
+  color: var(--bookle-text);
+  background: var(--bookle-bg);
 }
 
 .container-bookle {
@@ -20,6 +34,26 @@ body {
 .section-bookle {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.bookle-primary {
+  color: var(--bookle-primary);
+}
+
+.bookle-bg-primary {
+  background-color: var(--bookle-primary);
+}
+
+.bookle-accent {
+  color: var(--bookle-accent);
+}
+
+.bookle-border-accent {
+  border-color: var(--bookle-accent);
+}
+
+.bookle-soft-text {
+  color: var(--bookle-text-soft);
 }
 
 h1,
