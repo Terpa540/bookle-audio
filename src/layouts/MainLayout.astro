@@ -23,6 +23,21 @@ const {
 
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+      <link
+          rel="icon"
+          type="image/svg+xml"
+          href="/favicon.svg"
+        />
+
+        <link
+          rel="alternate icon"
+          href="/favicon.ico"
+        />
+      <link
+        rel="canonical"
+        href={Astro.url.href}
+      />
+
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
       
       <meta charset="UTF-8" />
@@ -30,6 +45,11 @@ const {
       <meta
         name="viewport"
         content="width=device-width, initial-scale=1"
+      />
+
+      <meta
+        name="theme-color"
+        content="#315F85"
       />
 
       <title>{title}</title>
@@ -74,9 +94,19 @@ const {
         content="summary_large_image"
       />
 
-      <link
-        rel="icon"
-        href="/favicon/favicon.svg"
+      <meta
+        name="twitter:title"
+        content={title}
+      />
+
+      <meta
+        name="twitter:description"
+        content={description}
+      />
+
+      <meta
+        name="twitter:image"
+        content={`${siteConfig.url}${siteConfig.ogImage}`}
       />
 
     </head>

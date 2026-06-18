@@ -4,7 +4,7 @@ export const siteConfig = {
   title: "Bookle | Producción profesional de audiolibros",
 
   description:
-    "Producción profesional de audiolibros y contenido sonoro para editoriales, autores y empresas.",
+  "Producción profesional de audiolibros y contenido narrativo para editoriales, autores y empresas.",
 
   url: "https://bookle.es",
 
